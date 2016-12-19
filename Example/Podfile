@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+def shared_pods
+    pod "DIAnalytics", :git => 'https://github.com/DialogInsight/DIAnalytics_iOS'
+end
+
+target “Example” do 
+	platform :ios, '8.0'
+   	shared_pods
+end

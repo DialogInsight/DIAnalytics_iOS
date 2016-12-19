@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DIAnalytics'
-  s.version          = '1.0.0'
+  s.version          = '0.1.2'
   s.summary          = 'DIAnalytics for iOS'
   s.license          = { :type => 'Commercial', :file => 'LICENSE.txt' }
-  s.description      = 'Cool Description'
+  s.description      = 'DIAnalytics makes it easy to integrate Dialog Insight push system in your application.'
   s.homepage = 'https://nomadesolutions.com'
   s.author           = { 'Nomade' => 'inf@nomadesolutions.com' }
-  s.source           = { :git => 'https://github.com/sacot41/DITest.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DialogInsight/DIAnalytics_iOS.git', :tag => s.version.to_s }
   s.requires_arc = false
 
   s.platform   = :ios, '8.0'

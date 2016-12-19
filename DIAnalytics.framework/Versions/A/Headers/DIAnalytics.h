@@ -104,8 +104,8 @@
  This method must be call after "startWithApplicationId" was called.
  You should not disable swizzling
  
- @param notificationSettings UIUserNotificationSettings of setting, default :
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound) categories:nil];
+ @param notificationSettings UNAuthorizationOptions of setting, default :
+    UNAuthorizationOptions *settings = UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
  
  */
 +(void)registeForRemoteNotification;
