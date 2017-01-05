@@ -49,7 +49,7 @@ pod "DIAnalytics"
 3. Setup your preference.
 ```objective-c
 [DIAnalytics setLogEnabled:YES];
-[DIAnalytics setBaseUrl:@"https://MY_URL.com"];
+[DIAnalytics setBaseUrl:@"https://ofsys.com"];
 ```
 
 4. Start the library with your ApplicationID provided by Dialog Insight in your "didFinishLaunchingWithOptions" implementation.
