@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.summary          = 'DIAnalytics for iOS'
   s.license          = { :type => 'Commercial', :file => 'LICENSE.txt' }
   s.description      = 'DIAnalytics makes it easy to integrate Dialog Insight push system in your application.'
-  s.homepage         = 'https://nomadesolutions.com'
-  s.author           = { 'Nomade' => 'inf@nomadesolutions.com' }
+  s.homepage         = 'http://www.dialoginsight.com'
+  s.author           = { 'Dialog Insight' => 'info@dialoginsight.com' }
   s.source           = { :git => 'https://github.com/DialogInsight/DIAnalytics_iOS.git', :tag => s.version.to_s }
   s.requires_arc     = true
 
