@@ -59,11 +59,31 @@ pod "DIAnalytics"
 ```
 
 5. Send information about the user.
-```objective-c
+In order to identify a user of the application as a contact of your DI project, you must provide the information corresponding to        the fields of the [unique key][2].
+
+     Note: 
+     the DI fields always start with a "f_". In the DI project fields page, look at the fields tagged as “primary field” and note their      code. In the following steps, just prepend “f_” with any field code. For instance, a DI field with the code “idCustomer” will            become “f_idCustomer”.
+
+     This is made in two simples step. First, gather the primary key fields informations in a dictionary.
+
+     For example, a project where the unique key is composed only of the EMail field, do:
+     ```objective-c
 NSMutableDictionary *customFieldsDictionary = [[NSMutableDictionary alloc] init];
 [customFieldsDictionary setObject:self.emailTextField.text forKey:@"f_EMail"];
-[customFieldsDictionary setObject:self.firstNameTextField.text forKey:@"first_name"];
-[customFieldsDictionary setObject:self.nameTextField.text forKey:@"name"];
+```
+For a project where the unique key is composed of the fields FirstName and LastName, do:
+```objective-c
+NSMutableDictionary *customFieldsDictionary = [[NSMutableDictionary alloc] init];
+[customFieldsDictionary setObject:self.firstNameTextField.text forKey:@"f_FirstName"];
+[customFieldsDictionary setObject:self.nameTextField.text forKey:@"f_LastName"];
+```
+For a project where the unique key is composed only of a field named “idCustomer”, do:
+```objective-c
+NSMutableDictionary *customFieldsDictionary = [[NSMutableDictionary alloc] init];
+[customFieldsDictionary setObject:self.idCustomerTextField.text forKey:@"f_idCustomer"];
+```
+Then, make another dictionary with a “contact” entry and send it.
+```objective-c
 NSDictionary *contactDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:customFieldsDictionary, @"contact", nil];
 
 [DIAnalytics identify:contactDictionary];
@@ -81,3 +101,4 @@ Dialog Insight, info@dialoginsight.com
 ## License
 
 [1]: https://firebase.google.com/docs/cloud-messaging/
+[2]: https://support.dialoginsight.com/en/support/solutions/articles/1000249331-defining-project-fields
