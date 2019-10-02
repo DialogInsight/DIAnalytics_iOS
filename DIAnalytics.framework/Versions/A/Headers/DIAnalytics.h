@@ -104,12 +104,10 @@
  This method must be call after "startWithApplicationId" was called.
  You should not disable swizzling
  
- @param notificationSettings UNAuthorizationOptions of setting, default :
-    UNAuthorizationOptions *settings = UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
+ By default: Alert | Sound | Badge;
  
  */
 +(void)registeForRemoteNotification;
-+(void)registeForRemoteNotificationWithSetting:(UNAuthorizationOptions *)notificationSettings __IOS_AVAILABLE(10.0);
 
 /**
  
@@ -130,6 +128,12 @@
  
  */
 +(void)handleDidRegisterForRemoteNotificationWithDeviceToken:(NSData*)deviceToken;
-    
+
+/**
+ 
+ This is a method to log.
+ 
+ */
++(void)log:(NSString *)logString;
 
 @end
