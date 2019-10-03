@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DIAnalytics'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'DIAnalytics for iOS'
   s.license          = { :type => 'Commercial', :file => 'LICENSE.txt' }
   s.description      = 'DIAnalytics makes it easy to integrate Dialog Insight push system in your application.'
