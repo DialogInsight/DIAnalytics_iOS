@@ -28,7 +28,7 @@
     [self.window makeKeyAndVisible];
     self.window.tintColor= [UIColor blackColor];
     
-    [[[DIAnalytics setLogEnabled:YES] setBaseUrl:@"https://dev.ofsys.com"] startWithApplicationId:@"43:3eKDDFH09wnUmFURCkL2hf5l62i3BbAu" withLaunchOptions:launchOptions];
+    [[[DIAnalytics setLogEnabled:YES] setBaseUrl:@"https://ofsys.com"] startWithApplicationId:@"43:3eKDDFH09wnUmFURCkL2hf5l62i3BbAu" withLaunchOptions:launchOptions];
     
     return YES;
 }
