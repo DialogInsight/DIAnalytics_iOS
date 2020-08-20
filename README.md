@@ -6,7 +6,9 @@
 
 ## Requirements
 
-- Firebase project and his "GoogleService-Info.plist". For more information, refer to [Firebase Cloud Messaging docs][1]
+- Firebase Project
+- Firebase Cloud Messaging configured in Firebase console. For more information, refer to [Firebase Cloud Messaging docs][1]
+- Firebase project's "GoogleService-Info.plist".
 - Application ID provided by Dialog Insight
 
 ## Installation
